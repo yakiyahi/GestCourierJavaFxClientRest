@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="635.0" prefWidth="945.0" style="-fx-background-color: #136B26;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.DirectionController">
+    <children>
+      <VBox layoutX="20.0" layoutY="20.0" prefHeight="617.0" prefWidth="945.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="401.0" prefWidth="945.0">
+               <children>
+                  <Label layoutX="294.0" text="Listage des Directions/Services" textFill="#fcf9f9">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="BTN_NW_DIR" layoutX="40.0" layoutY="88.0" mnemonicParsing="false" onAction="#directServAction" prefHeight="25.0" prefWidth="146.0" stylesheets="@../css/homeview.css" text="Nouveau" textFill="#f8f7f7">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f3f3" iconName="PLUS" size="1.5em" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_ACT_DIR" layoutX="278.0" layoutY="88.0" mnemonicParsing="false" onAction="#directServAction" prefHeight="25.0" prefWidth="146.0" stylesheets="@../css/homeview.css" text="Actualiser" textFill="#f8f7f7">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f3f3" iconName="PLUS" size="1.5em" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_EDT_DIR" layoutX="537.0" layoutY="88.0" mnemonicParsing="false" onAction="#directServAction" prefHeight="25.0" prefWidth="146.0" stylesheets="@../css/homeview.css" text="Editer" textFill="#f8f7f7">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f3f3" iconName="EDIT" size="1.5em" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_SUP_DIR" layoutX="801.0" layoutY="88.0" mnemonicParsing="false" onAction="#directServAction" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: red;" stylesheets="@../css/homeview.css" text="Supprimer" textFill="#f8f7f7">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f3f3" iconName="TRASH" size="1.5em" />
+                     </graphic>
+                  </Button>
+                  <Label layoutX="40.0" layoutY="151.0" text="Recherche:" textFill="#f5f4f4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TXT_RECH_DIR" alignment="CENTER" layoutX="125.0" layoutY="147.0" prefHeight="30.0" prefWidth="430.0" promptText="Rechercher une direction ou service par son code ou description">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="BTN_RECH_DIR" layoutX="554.0" layoutY="146.0" mnemonicParsing="false" onAction="#directServAction" prefHeight="31.0" prefWidth="62.0" stylesheets="@../css/homeview.css" textFill="#f8f7f7">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f3f3" iconName="SEARCH" size="1.5em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <TableView fx:id="TBVW_DIR" prefHeight="654.0" prefWidth="945.0" stylesheets="@../css/homeview.css">
+               <columns>
+                  <TableColumn fx:id="CLMN_CODE_DIR" prefWidth="234.0" text="Code Direction" />
+                  <TableColumn fx:id="CLMN_ABREV_DIR" prefWidth="234.0" text="Abreviation Direction" />
+                  <TableColumn fx:id="CLMN_DESCR_DIR" minWidth="0.0" prefWidth="139.0" text="Description de direction" />
+                  <TableColumn fx:id="CLMN_PROV_DIR" minWidth="0.0" prefWidth="139.0" text="Provenant" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

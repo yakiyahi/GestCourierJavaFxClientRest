@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="622.0" prefWidth="883.0" style="-fx-background-color: #147029;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.AccueilController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="816.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="189.0" prefWidth="883.0">
+               <children>
+                  <Label layoutX="401.0" text="Accueil" textAlignment="JUSTIFY" textFill="#e8e6e6">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="205.0" layoutY="102.0" text="Nombre des couriers envoyé par Intititution" textAlignment="CENTER" textFill="#e8e6e6">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <BarChart fx:id="MY_CHART" prefHeight="518.0" prefWidth="883.0" stylesheets="@../../../../GestBankClient/src/gestbankclient/css/chart.css">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" style="-fx-background-color: white;" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="numberAxis" side="LEFT" style="-fx-background-color: white;" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

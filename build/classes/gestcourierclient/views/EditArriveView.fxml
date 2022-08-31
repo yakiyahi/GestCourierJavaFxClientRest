@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="334.0" prefWidth="500.0" style="-fx-background-color: #3C295E;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="gestcourierclient.controllers.EditArriveController">
+   <children>
+      <Pane layoutX="-4.0" prefHeight="64.0" prefWidth="509.0" style="-fx-background-color: #136B27;">
+         <children>
+            <Label layoutX="156.0" layoutY="17.0" text="Modifier l' Arrivée" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="60.0" layoutY="155.0" text="Date d'arriver:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="211.0" text="Heur d'arriver:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_EDT_HEUR_ARV" layoutX="180.0" layoutY="208.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_UPDT_ARV" layoutX="100.0" layoutY="275.0" mnemonicParsing="false" onAction="#editerArriveAction" prefHeight="31.0" prefWidth="197.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Enregistrer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="SAVE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Button fx:id="BTN_EDT_CLOS_ARV" layoutX="304.0" layoutY="275.0" mnemonicParsing="false" onAction="#editerArriveAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Fermer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="CLOSE" size="1.5em" />
+         </graphic>
+      </Button>
+      <DatePicker fx:id="DT_EDT_ARV" layoutX="180.0" layoutY="155.0" prefHeight="25.0" prefWidth="266.0" />
+      <Label layoutX="31.0" layoutY="87.0" text="Identifiant d'arriver:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_EDT_ID_ARV" editable="false" layoutX="180.0" layoutY="85.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

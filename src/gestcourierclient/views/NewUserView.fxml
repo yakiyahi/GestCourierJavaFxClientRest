@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="509.0" style="-fx-background-color: #3C295E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.NewUserController">
+   <children>
+      <Pane prefHeight="64.0" prefWidth="509.0" style="-fx-background-color: #136B27;">
+         <children>
+            <Label layoutX="156.0" layoutY="17.0" text="Nouveau Utilisateur" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="32.0" layoutY="83.0" text="Numero utilisateur:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_NUM_USR" layoutX="184.0" layoutY="80.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="56.0" layoutY="131.0" text="Nom Utilisateur:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_NOM_USR" layoutX="184.0" layoutY="129.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="188.0" text="Pseudo Utilisateur:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_PSEUDO_USR" layoutX="184.0" layoutY="186.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_ADD_USR" layoutX="126.0" layoutY="387.0" mnemonicParsing="false" onAction="#newUsrAction" prefHeight="31.0" prefWidth="197.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Enregistrer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="SAVE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Button fx:id="BTN_CLOS_USR" layoutX="330.0" layoutY="387.0" mnemonicParsing="false" onAction="#newUsrAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Fermer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="CLOSE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Label layoutX="61.0" layoutY="238.0" text="Mot de passe :" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="288.0" text="Confirm mot de passe:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="337.0" text="Role utilisaateur:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="TXT_PASSWORD" layoutX="184.0" layoutY="238.0" prefHeight="31.0" prefWidth="266.0" />
+      <PasswordField fx:id="TXT_CONFRM_PASS" layoutX="184.0" layoutY="288.0" prefHeight="31.0" prefWidth="266.0" />
+      <ComboBox fx:id="CMBX_ROLE_USR" layoutX="184.0" layoutY="337.0" prefHeight="25.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>

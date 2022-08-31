@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="500.0" style="-fx-background-color: #3C295E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.NewDirectionController">
+   <children>
+      <Pane layoutX="-6.0" prefHeight="64.0" prefWidth="518.0" style="-fx-background-color: #136B27;">
+         <children>
+            <Label layoutX="156.0" layoutY="17.0" text="Nouveau Direction" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="58.0" layoutY="88.0" text="Code Ministere:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="143.0" text="Code Direction:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_ABREV_DIR" layoutX="182.0" layoutY="190.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_AD_DIR" layoutX="98.0" layoutY="297.0" mnemonicParsing="false" onAction="#newDirectionAction" prefHeight="31.0" prefWidth="197.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Enregistrer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="SAVE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Button fx:id="BTN_CLOS_DIR" layoutX="302.0" layoutY="297.0" mnemonicParsing="false" onAction="#newDirectionAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Fermer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="CLOSE" size="1.5em" />
+         </graphic>
+      </Button>
+      <ComboBox fx:id="CMBX_PROV_DIR" layoutX="182.0" layoutY="88.0" prefHeight="25.0" prefWidth="266.0" />
+      <Label layoutX="14.0" layoutY="242.0" text="Description Direction:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_DES_DIR" layoutX="184.0" layoutY="239.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="59.0" layoutY="193.0" text="Abrev Direction:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_CODE_DIR" layoutX="182.0" layoutY="140.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

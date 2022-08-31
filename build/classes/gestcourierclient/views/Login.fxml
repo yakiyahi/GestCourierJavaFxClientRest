@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="777.0" style="-fx-background-color: #15752B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.LoginController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <VBox layoutX="-4.0" prefHeight="531.0" prefWidth="200.0" style="-fx-background-color: #282971;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="584.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="200.0" layoutY="14.0" prefHeight="543.0" prefWidth="577.0" spacing="20.0" style="-fx-background-color: #147029;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="319.0" text="---------Gestion Courier------" textFill="#f5f4f5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TXT_USR_NAME" alignment="CENTER" prefHeight="30.0" prefWidth="378.0" promptText="User name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="PASSWR_FLD" alignment="CENTER" prefHeight="31.0" prefWidth="497.0" promptText="User password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="BTN_LOGIN" alignment="CENTER" mnemonicParsing="false" onAction="#loginAction" prefHeight="30.0" prefWidth="495.0" stylesheets="@../css/homeview.css" text="Se Connecter" textFill="#f2efef">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label text="Mot de passe oublie?" textFill="#1c125b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="LBL_MSG" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="402.0" textAlignment="CENTER" textFill="#a40505">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="80.0" right="80.0" top="10.0" />
+         </padding></VBox>
+    </children>
+</AnchorPane>

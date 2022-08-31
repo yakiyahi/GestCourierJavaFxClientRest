@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="500.0" style="-fx-background-color: #3C295E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.NewDecisionController">
+   <children>
+      <Pane layoutX="-9.0" prefHeight="64.0" prefWidth="509.0" style="-fx-background-color: #136B27;">
+         <children>
+            <Label layoutX="156.0" layoutY="17.0" text="Nouveau Decision" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="62.0" layoutY="78.0" text="Ref Courier:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="191.0" text="Description: " textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_DESCR_TYPE" layoutX="160.0" layoutY="188.0" prefHeight="30.0" prefWidth="276.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="43.0" layoutY="253.0" text="Date Decision:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTN_ADD_DECIS" layoutX="99.0" layoutY="319.0" mnemonicParsing="false" onAction="#newDecisAction" prefHeight="31.0" prefWidth="197.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Enregistrer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="SAVE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Button fx:id="BTN_CLOS_DECIS" layoutX="303.0" layoutY="319.0" mnemonicParsing="false" onAction="#newDecisAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Fermer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="CLOSE" size="1.5em" />
+         </graphic>
+      </Button>
+      <DatePicker fx:id="DT_DECIS" layoutX="159.0" layoutY="253.0" prefHeight="25.0" prefWidth="276.0" />
+      <ComboBox fx:id="CMBX_REF_COUR_DECIS" layoutX="159.0" layoutY="78.0" prefHeight="25.0" prefWidth="276.0" />
+      <Label layoutX="43.0" layoutY="126.0" text="Type Decision:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CMBX_TYPE_DECIS" layoutX="159.0" layoutY="126.0" prefHeight="25.0" prefWidth="276.0" />
+   </children>
+</AnchorPane>

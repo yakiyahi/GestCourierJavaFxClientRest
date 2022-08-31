@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="500.0" style="-fx-background-color: #3C295E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.EditerEmployerController">
+   <children>
+      <Pane prefHeight="64.0" prefWidth="510.0" style="-fx-background-color: #136B27;">
+         <children>
+            <Label layoutX="156.0" layoutY="17.0" text="Modification Employer" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="TXT_NOM_EMP_EDT" layoutX="183.0" layoutY="145.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="45.0" layoutY="206.0" text="prenom Employer:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_PRNM_EMP_EDT" layoutX="179.0" layoutY="204.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="43.0" layoutY="268.0" text="Address Employer:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_ADDR_EMP_EDT" layoutX="183.0" layoutY="265.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_UPDT_EMP" layoutX="115.0" layoutY="310.0" mnemonicParsing="false" onAction="#edtEmplAction" prefHeight="31.0" prefWidth="197.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Update" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="SAVE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Button fx:id="BTN_CLOS_EMPL_EDT" layoutX="319.0" layoutY="310.0" mnemonicParsing="false" onAction="#edtEmplAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Fermer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="CLOSE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Label layoutX="42.0" layoutY="90.0" text="Numero Employer:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_NUM_EMP_EDT" editable="false" layoutX="183.0" layoutY="87.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="62.0" layoutY="158.0" text="Nom Employer:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

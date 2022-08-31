@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="BORDR_PAN" style="-fx-background-color: #147029;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.HomeController">
+   <left>
+            <VBox layoutX="6.0" layoutY="10.0" prefHeight="655.0" prefWidth="206.0" style="-fx-background-color: #282971;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="124.0" prefWidth="175.0">
+                     <children>
+                        <Label layoutX="32.0" layoutY="9.0" text="DRCF" textFill="#fcf7f7">
+                           <font>
+                              <Font name="System Bold" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="70.0" prefHeight="19.0" prefWidth="153.0" text="Delegation Regionale de " textFill="#f5f2f2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="91.0" prefHeight="17.0" prefWidth="124.0" text="Controle Financier" textFill="#f5f2f2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="BTN_ACC" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="212.0" stylesheets="@../css/homeview.css" text="Accueil" textFill="#eee9e9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f2f2" iconName="HOME" size="25" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_ARV" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="208.0" stylesheets="@../css/homeview.css" text="Arrivée" textFill="#eee9e9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BTN_CONSRN" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="206.0" stylesheets="@../css/homeview.css" text="Consernant" textFill="#eee9e9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f2f2" iconName="USER" size="25" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_PROV" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="208.0" stylesheets="@../css/homeview.css" text="Provenant" textFill="#eee9e9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f2f2" iconName="ARCHIVE" size="25" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_DIR" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="208.0" stylesheets="@../css/homeview.css" text="Direction" textFill="#eee9e9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f2f2" iconName="PENCIL" size="25" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_COUR" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="208.0" stylesheets="@../css/homeview.css" text="Courier" textFill="#eee9e9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f2f2" iconName="FILE" size="25" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_DECIS" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="208.0" stylesheets="@../css/homeview.css" text="Decision" textFill="#eee9e9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f2f2" iconName="BOOK" size="25" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BTN_USR" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="208.0" stylesheets="@../css/homeview.css" text="Utilisateur" textFill="#eee9e9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#f5f2f2" iconName="USERS" size="25" />
+                     </graphic>
+                  </Button>
+            <Button fx:id="BTN_LOGOUT" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButton" prefHeight="39.0" prefWidth="208.0" stylesheets="@../css/homeview.css" text="Deconnection" textFill="#eee9e9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+               </children>
+            </VBox>
+   </left>
+</BorderPane>

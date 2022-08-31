@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="554.0" style="-fx-background-color: #3C295E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestcourierclient.controllers.EditerCourierController">
+   <children>
+      <Pane prefHeight="64.0" prefWidth="554.0" style="-fx-background-color: #136B27;">
+         <children>
+            <Label layoutX="156.0" layoutY="17.0" text="Modification Courier" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="48.0" layoutY="320.0" text="Identifiant Arrive:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTN_UPDATE_COUR" layoutX="118.0" layoutY="423.0" mnemonicParsing="false" onAction="#editerCourierAction" prefHeight="31.0" prefWidth="197.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Enregistrer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="SAVE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Button fx:id="BTN_CLOS_COUR_EDT" layoutX="322.0" layoutY="423.0" mnemonicParsing="false" onAction="#editerCourierAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #136B27;" stylesheets="@../css/homeview.css" text="Fermer" textFill="#eeeaea">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#f5f5f5" iconName="CLOSE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Label layoutX="33.0" layoutY="177.0" text="Description courier:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="126.0" text="Type Courier:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="84.0" text="Reference Courier:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXT_RF_COUR_EDT" layoutX="186.0" layoutY="82.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="CMBX_ID_ARV_EDT" layoutX="186.0" layoutY="317.0" prefHeight="31.0" prefWidth="266.0" />
+      <Label layoutX="46.0" layoutY="368.0" text="Code Consernant:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CMBX_CD_CONS_EDT" layoutX="186.0" layoutY="365.0" prefHeight="31.0" prefWidth="266.0" />
+      <Label layoutX="67.0" layoutY="225.0" text="Code direction:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CMBX_CD_DIR_EDT" layoutX="186.0" layoutY="222.0" prefHeight="31.0" prefWidth="266.0" />
+      <Label layoutX="25.0" layoutY="274.0" text="Identifiant utilisateur:" textFill="#fcf7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CMBX_ID_USR_EDT" layoutX="186.0" layoutY="271.0" prefHeight="31.0" prefWidth="266.0" />
+      <TextArea fx:id="TXT_DSCR_COUR_EDT" layoutX="183.0" layoutY="161.0" prefHeight="58.0" prefWidth="272.0" />
+      <ComboBox fx:id="CMBX_TP_COUR_EDT" layoutX="186.0" layoutY="123.0" prefHeight="31.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>
